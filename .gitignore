@@ -1,0 +1,18 @@
+__pycache__/
+*.py[cod]
+.venv/
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+.coverage
+Thumbs.db
+.DS_Store
+
+# Local carriers and release archive
+/image.png
+/sealed.png
+/generated.png
+/received.png
+/secretPNG_share-*.zip
+/test_image.png

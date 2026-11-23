@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=77,<90"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "secretpng-share"
+version = "1.0.0"
+description = "Encrypt files inside PNG images and transfer them over LAN."
+readme = "README.md"
+requires-python = ">=3.10,<3.15"
+license = "MIT"
+license-files = ["LICENSE"]
+dependencies = ["Pillow>=12.1.1,<14", "cryptography>=46.0.7,<52"]
+
+[project.scripts]
+secretpng = "secretpng.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
